@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="349c3d32e4114231bd7937bd01f7eaa1" Name="Diagram1">
+        <EntityTypeShape EntityType="Karachi_Complaint_SystemModel.Department" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Karachi_Complaint_SystemModel.IncomeTaxComplaint" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Karachi_Complaint_SystemModel.KelectricComplaint" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Karachi_Complaint_SystemModel.PoliceComplaint" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Karachi_Complaint_SystemModel.SuigasComplaint" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Karachi_Complaint_SystemModel.WaterAndSewerageComplaint" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <AssociationConnector Association="Karachi_Complaint_SystemModel.FK__IncomeTaxC__S_NO__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="Karachi_Complaint_SystemModel.FK__KelectricC__S_NO__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="Karachi_Complaint_SystemModel.FK__PoliceComp__S_NO__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="Karachi_Complaint_SystemModel.FK__SuigasComp__S_NO__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="Karachi_Complaint_SystemModel.FK__WaterAndSe__S_NO__2D27B809" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

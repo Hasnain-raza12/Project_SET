@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Karachi_Complaint_SystemModelStoreContainer" CdmEntityContainer="Karachi_Complaint_SystemEntities">
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="Karachi_Complaint_SystemModel.Department">
+        <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="S_NO" ColumnName="S_NO" />
+          <ScalarProperty Name="DEPT_NAME" ColumnName="DEPT_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IncomeTaxComplaints">
+      <EntityTypeMapping TypeName="Karachi_Complaint_SystemModel.IncomeTaxComplaint">
+        <MappingFragment StoreEntitySet="IncomeTaxComplaint">
+          <ScalarProperty Name="CNIC_NO" ColumnName="CNIC_NO" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CNIC_ADDRESS" ColumnName="CNIC_ADDRESS" />
+          <ScalarProperty Name="AREA" ColumnName="AREA" />
+          <ScalarProperty Name="COMPLAINT" ColumnName="COMPLAINT" />
+          <ScalarProperty Name="S_NO" ColumnName="S_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KelectricComplaints">
+      <EntityTypeMapping TypeName="Karachi_Complaint_SystemModel.KelectricComplaint">
+        <MappingFragment StoreEntitySet="KelectricComplaint">
+          <ScalarProperty Name="CNIC_NO" ColumnName="CNIC_NO" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CNIC_ADDRESS" ColumnName="CNIC_ADDRESS" />
+          <ScalarProperty Name="AREA" ColumnName="AREA" />
+          <ScalarProperty Name="COMPLAINT" ColumnName="COMPLAINT" />
+          <ScalarProperty Name="S_NO" ColumnName="S_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PoliceComplaints">
+      <EntityTypeMapping TypeName="Karachi_Complaint_SystemModel.PoliceComplaint">
+        <MappingFragment StoreEntitySet="PoliceComplaint">
+          <ScalarProperty Name="CNIC_NO" ColumnName="CNIC_NO" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CNIC_ADDRESS" ColumnName="CNIC_ADDRESS" />
+          <ScalarProperty Name="AREA" ColumnName="AREA" />
+          <ScalarProperty Name="COMPLAINT" ColumnName="COMPLAINT" />
+          <ScalarProperty Name="S_NO" ColumnName="S_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SuigasComplaints">
+      <EntityTypeMapping TypeName="Karachi_Complaint_SystemModel.SuigasComplaint">
+        <MappingFragment StoreEntitySet="SuigasComplaint">
+          <ScalarProperty Name="CNIC_NO" ColumnName="CNIC_NO" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CNIC_ADDRESS" ColumnName="CNIC_ADDRESS" />
+          <ScalarProperty Name="AREA" ColumnName="AREA" />
+          <ScalarProperty Name="COMPLAINT" ColumnName="COMPLAINT" />
+          <ScalarProperty Name="S_NO" ColumnName="S_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaterAndSewerageComplaints">
+      <EntityTypeMapping TypeName="Karachi_Complaint_SystemModel.WaterAndSewerageComplaint">
+        <MappingFragment StoreEntitySet="WaterAndSewerageComplaint">
+          <ScalarProperty Name="CNIC_NO" ColumnName="CNIC_NO" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CNIC_ADDRESS" ColumnName="CNIC_ADDRESS" />
+          <ScalarProperty Name="AREA" ColumnName="AREA" />
+          <ScalarProperty Name="COMPLAINT" ColumnName="COMPLAINT" />
+          <ScalarProperty Name="S_NO" ColumnName="S_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

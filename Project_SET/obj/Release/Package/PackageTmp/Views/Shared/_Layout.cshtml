@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/all.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div class="body">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="transition: 1s;" class="navbar-brand" href='@Url.Action("Index","Home")'>Karachi Complaint System</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li><a style="transition: 1s;" href='@Url.Action("Index","Home")'><b>Home</b></a></li>
+                <li><a style="transition: 1s;" href='@Url.Action("Index","About")'><b>About</b></a></li>
+                <li><a style="transition: 1s;" href='@Url.Action("Index","Contactus")'><b>Contact us</b></a></li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown"><b>Complaint Here
+                        <span class="caret"></span></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a style="transition: 1s;" href='@Url.Action("Create","PoliceComplaints")'>Police Complaint</a></li>
+                        <div class="divider"></div>
+                        <li><a style="transition: 1s;" href='@Url.Action("Create","KelectricComplaints")'>K-Electric Complaint</a></li>
+                        <div class="divider"></div>
+                        <li><a style="transition: 1s;" href='@Url.Action("Create","SuigasComplaints")'>Sui-Gas Complaint</a></li>
+                        <div class="divider"></div>
+                        <li><a style="transition: 1s;" href='@Url.Action("Create","WaterAndSewerageComplaints")'>Water Sewerage Complaint</a></li>
+                        <div class="divider"></div>
+                        <li><a style="transition: 1s;" href='@Url.Action("Create","IncomeTaxComplaints")'>Income Tax Complaint</a></li>
+                    </ul>
+                </li>
+                @*<li><a style="transition: 1s;" href='@Url.Action("Index","Help")'><b>Help ? </b></a></li>*@
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a style="transition: 1s;" href="#" data-toggle="dropdown"><b>ADMIN
+                        <span class="glyphicon glyphicon-cog "></span></b></a>
+                    <ul class="dropdown-menu">
+                        <div class="divider"></div>
+                        <li><a href='@Url.Action("Index","AdminLogin")'>Login  
+                            <span class="glyphicon glyphicon-log-in"></span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container body-content">
+        <br />
+        @RenderBody()
+    </div>
+        <footer>
+            <div class="modal-footer">
+                <p class="lead" style="text-align:center"><b> 2020 All copy rights&copy; are reserved by Government of Pakistan  </b></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/scripts/jquery-3.3.1.js"></script>
+    <script src="~/scripts/bootstrap.js"></script>
+    <script src="~/scripts/Site.js"></script> 
+
+   
+</body>
+</html>

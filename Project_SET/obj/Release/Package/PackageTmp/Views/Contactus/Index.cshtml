@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div class="contact container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="heading">
+                <h2><b><i>Ask how we can help you ?</i></b></h2>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="paragraph-1">
+                <p><h4>If you have any query then contact information is given below.<br /> <i>Thanks. </i></h4></p>
+            </div> <br />
+        </div>
+    </div>
+
+   
+   
+
+    <div class="Address">
+        <div class="paragraph-2 container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3><b>Points  of Contact </b></h3>
+                    <h3><b><i><span class="glyphicon glyphicon-globe"></span> Our Office Address :</i></b></h3>
+                    <div class="text-1">
+                        <p><h4><i>RBG Building, 11th Floor adjacent to Ocean Mall Near Do Talwaar, Karachi Pakistan. </i></h4></p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="location-image">
+                        <div id="map-container-google-3" class="z-depth-1-half map-container-3">
+                            <iframe src="https://maps.google.com/maps?q=karachi&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                                    style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+        <div class="paragraph-3 container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3><b><i>Our Contact Number :</i></b></h3>
+                    <div class="text-2">
+                        <p><h4><i><b><span class="glyphicon glyphicon-phone-alt"></span> Telephone Number : </b> +92-21-1234952 / +92-21-4567891 </i></h4></p>
+                        <div class="divider"></div>
+                        <p><h4><i><b><span class="glyphicon glyphicon-phone"></span> Whats'App Number :</b> +92-322-2885621 / +92-310-03484234 </i></h4></p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="paragraph-4">
+                        <h3><b><i><span class="glyphicon glyphicon-envelope"></span> Our Post Address :</i></b></h3>
+                        <p><h4><i><b> P.O.BOX :</b> 635589735 </i></h4></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <hr />
+    <div class="form-contactus">
+        <form class="form-horizontal">
+            <fieldset>
+                <legend><b><i>Contact Us Here</i> </b></legend>
+                <div class="form-group">
+                    <label for="inputsm" class="col-lg-2 control-label"> Name </label>
+                    <div class="col-lg-10">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-user"></span>
+                                </span>
+                            <input type="text" class="form-control" id="inputsm" placeholder="Name" required="required">
+                        </div>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label for="CNIC" class="col-lg-2 control-label"> CNIC Number </label>
+                    <div class="col-lg-10">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-credit-card"></span>
+                                </span>
+                            <input type="number" class="form-control" id="CNIC" placeholder="CNIC Number" required="required">
+                        </div>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label"> Email </label>
+                    <div class="col-lg-10">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required="required">
+                        </div>
+                        </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label for="inputQuery" class="col-lg-2 control-label">Comments</label>
+                    <div class="col-lg-10">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-comment"></span>
+                                </span>
+                            <textarea class="form-control" rows="3" id="inputQuery" placeholder="Comment Here" required="required"></textarea>
+                        </div>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="submit" class="btn btn-primary" required="required">Submit</button>
+                        <button type="reset" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<br />
+<br />
+
+<style>
+    .text-1{
+        width:50%;
+    }  
+    .location-image{
+        height:70%;
+        width:80%;
+        border:solid;
+        border-color:black;
+    }
+    .map-container-3{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+/*margin-left:90%;*/
+}
+.map-container-3 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+
+</style>
+
+
+
+

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Karachi_Complaint_SystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="S_NO" />
+    </Key>
+    <Property Name="S_NO" Type="bigint" Nullable="false" />
+    <Property Name="DEPT_NAME" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="IncomeTaxComplaint">
+    <Key>
+      <PropertyRef Name="CNIC_NO" />
+    </Key>
+    <Property Name="CNIC_NO" Type="bigint" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="CNIC_ADDRESS" Type="nvarchar" MaxLength="255" />
+    <Property Name="AREA" Type="nvarchar" MaxLength="255" />
+    <Property Name="COMPLAINT" Type="nvarchar" MaxLength="255" />
+    <Property Name="S_NO" Type="bigint" />
+  </EntityType>
+  <EntityType Name="KelectricComplaint">
+    <Key>
+      <PropertyRef Name="CNIC_NO" />
+    </Key>
+    <Property Name="CNIC_NO" Type="bigint" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="CNIC_ADDRESS" Type="nvarchar" MaxLength="255" />
+    <Property Name="AREA" Type="nvarchar" MaxLength="255" />
+    <Property Name="COMPLAINT" Type="nvarchar" MaxLength="255" />
+    <Property Name="S_NO" Type="bigint" />
+  </EntityType>
+  <EntityType Name="PoliceComplaint">
+    <Key>
+      <PropertyRef Name="CNIC_NO" />
+    </Key>
+    <Property Name="CNIC_NO" Type="bigint" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="CNIC_ADDRESS" Type="nvarchar" MaxLength="255" />
+    <Property Name="AREA" Type="nvarchar" MaxLength="255" />
+    <Property Name="COMPLAINT" Type="nvarchar" MaxLength="255" />
+    <Property Name="S_NO" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SuigasComplaint">
+    <Key>
+      <PropertyRef Name="CNIC_NO" />
+    </Key>
+    <Property Name="CNIC_NO" Type="bigint" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="CNIC_ADDRESS" Type="nvarchar" MaxLength="255" />
+    <Property Name="AREA" Type="nvarchar" MaxLength="255" />
+    <Property Name="COMPLAINT" Type="nvarchar" MaxLength="255" />
+    <Property Name="S_NO" Type="bigint" />
+  </EntityType>
+  <EntityType Name="WaterAndSewerageComplaint">
+    <Key>
+      <PropertyRef Name="CNIC_NO" />
+    </Key>
+    <Property Name="CNIC_NO" Type="bigint" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="CNIC_ADDRESS" Type="nvarchar" MaxLength="255" />
+    <Property Name="AREA" Type="nvarchar" MaxLength="255" />
+    <Property Name="COMPLAINT" Type="nvarchar" MaxLength="255" />
+    <Property Name="S_NO" Type="bigint" />
+  </EntityType>
+  <Association Name="FK__IncomeTaxC__S_NO__2F10007B">
+    <End Role="Departments" Type="Self.Departments" Multiplicity="0..1" />
+    <End Role="IncomeTaxComplaint" Type="Self.IncomeTaxComplaint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="S_NO" />
+      </Principal>
+      <Dependent Role="IncomeTaxComplaint">
+        <PropertyRef Name="S_NO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__KelectricC__S_NO__29572725">
+    <End Role="Departments" Type="Self.Departments" Multiplicity="0..1" />
+    <End Role="KelectricComplaint" Type="Self.KelectricComplaint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="S_NO" />
+      </Principal>
+      <Dependent Role="KelectricComplaint">
+        <PropertyRef Name="S_NO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PoliceComp__S_NO__276EDEB3">
+    <End Role="Departments" Type="Self.Departments" Multiplicity="0..1" />
+    <End Role="PoliceComplaint" Type="Self.PoliceComplaint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="S_NO" />
+      </Principal>
+      <Dependent Role="PoliceComplaint">
+        <PropertyRef Name="S_NO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SuigasComp__S_NO__2B3F6F97">
+    <End Role="Departments" Type="Self.Departments" Multiplicity="0..1" />
+    <End Role="SuigasComplaint" Type="Self.SuigasComplaint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="S_NO" />
+      </Principal>
+      <Dependent Role="SuigasComplaint">
+        <PropertyRef Name="S_NO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__WaterAndSe__S_NO__2D27B809">
+    <End Role="Departments" Type="Self.Departments" Multiplicity="0..1" />
+    <End Role="WaterAndSewerageComplaint" Type="Self.WaterAndSewerageComplaint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="S_NO" />
+      </Principal>
+      <Dependent Role="WaterAndSewerageComplaint">
+        <PropertyRef Name="S_NO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Karachi_Complaint_SystemModelStoreContainer">
+    <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IncomeTaxComplaint" EntityType="Self.IncomeTaxComplaint" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KelectricComplaint" EntityType="Self.KelectricComplaint" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PoliceComplaint" EntityType="Self.PoliceComplaint" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SuigasComplaint" EntityType="Self.SuigasComplaint" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WaterAndSewerageComplaint" EntityType="Self.WaterAndSewerageComplaint" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__IncomeTaxC__S_NO__2F10007B" Association="Self.FK__IncomeTaxC__S_NO__2F10007B">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="IncomeTaxComplaint" EntitySet="IncomeTaxComplaint" />
+    </AssociationSet>
+    <AssociationSet Name="FK__KelectricC__S_NO__29572725" Association="Self.FK__KelectricC__S_NO__29572725">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="KelectricComplaint" EntitySet="KelectricComplaint" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PoliceComp__S_NO__276EDEB3" Association="Self.FK__PoliceComp__S_NO__276EDEB3">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="PoliceComplaint" EntitySet="PoliceComplaint" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SuigasComp__S_NO__2B3F6F97" Association="Self.FK__SuigasComp__S_NO__2B3F6F97">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="SuigasComplaint" EntitySet="SuigasComplaint" />
+    </AssociationSet>
+    <AssociationSet Name="FK__WaterAndSe__S_NO__2D27B809" Association="Self.FK__WaterAndSe__S_NO__2D27B809">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="WaterAndSewerageComplaint" EntitySet="WaterAndSewerageComplaint" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

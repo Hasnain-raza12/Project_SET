@@ -1,0 +1,143 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<br>
+<center><h3><b><i>Dashboard</i></b></h3></center>
+<br>
+<br>
+<br>
+<div class="logout container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <a href='@Url.Action("SignOut","AdminLogin")'><b><i><span class="glyphicon glyphicon-log-out"></span> Sign out</i></b></a>
+        </div>
+    </div>
+</div>
+<div class="sub-heading-one container">
+    <div class="row">
+        <div class="col-lg-4">
+                <div class="dp-pic">
+                    <a href='@Url.Action("Index","PoliceComplaints")'><img class="police-img" src="~/images/logo.png" /></a><br />
+                </div>
+            <br>
+                <div class="police-txt">
+                    <a href='@Url.Action("Index","PoliceComplaints")'><h4><b><i>Police Database</i></b></h4></a>
+                </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="dp-pic">
+                <a href='@Url.Action("Index","KelectricComplaints")'><img class="kelectric-img" src="~/images/karachi-electric-supply-corporation-kesc-k-electric.png" /></a><br />
+            </div>
+            <br>
+                <div class="kelectric-txt">
+                    <a href='@Url.Action("Index","KelectricComplaints")'><h4><b><i>Kelectric Database</i></b></h4></a>
+                </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="dp-pic">
+                <a href='@Url.Action("Index","SuigasComplaints")'><img class="Suigas-img" src="~/images/sui-southern-gas-company-limited-pakistan-logo-F7A8750A62-seeklogo.com_.png" /></a><br />
+            </div>
+            <br>
+                <div class="Suigas-txt">
+                    <a href='@Url.Action("Index","SuigasComplaints")'><h4><b><i>Suigas Database</i></b></h4></a>
+                </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="dp-pic">
+                <a href='@Url.Action("Index","WaterAndSewerageComplaints")'><img class="WaterAndSewerage-img" src="~/images/water-drop-hands-13754449.jpg" /></a><br />
+            </div>
+                <div class="WaterAndSewerage-txt">
+                    <a href='@Url.Action("Index","WaterAndSewerageComplaints")'><h4><b><i>Water and Sewerage Database</i></b></h4></a>
+                </div>
+            <br />
+            <br />
+        </div>
+        <div class="col-md-6">
+            <div class="dp-pic">
+                <a href='@Url.Action("Index","IncomeTaxComplaints")'><img class="IncomeTax-img" src="~/images/KTBA-LOGO-old-lar.png" /></a><br />
+            </div>
+            <br>
+            <div class="IncomeTax-txt">
+                <a href='@Url.Action("Index","IncomeTaxComplaints")'><h4><b><i>IncomeTax Database</i></b></h4></a>
+            </div>
+            <br>
+        </div>
+                
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+
+
+
+<style>
+    .logout{
+        float:right;
+        margin-left:90%;
+        margin-top:-12%;
+    }
+    .dp-pic{
+        height:100px;
+        width:100px;
+
+    }
+    .police-img{
+        height:100%;
+        width:100%;
+        margin-left:23%;
+    }
+    .police-txt{
+        margin-left:2%;
+    }
+    .kelectric-img{
+        height:100%;
+        width:100%;
+        margin-left:23%;
+     /*   border:solid;
+        border-color:black;*/
+    }
+    .kelectric-txt{
+        margin-top:1%;
+      margin-left:2%;
+
+    }
+    .Suigas-img{
+        height:100%;
+        width:100%;
+        margin-left:23%;
+        border:solid;
+        border-color:black;
+    }
+    .Suigas-txt{
+         margin-top:1%;
+         margin-left:2%;
+    }
+    .WaterAndSewerage-img{
+        height:100%;
+        width:100%;
+        margin-left:70%;
+    }
+    .WaterAndSewerage-txt{
+        margin-top:1%;
+         margin-left:2%;
+    }
+   .IncomeTax-img{
+       height:100%;
+       width:100%;
+       margin-left:30%;
+
+   }
+   .IncomeTax-txt{
+      margin-top:-3%;
+         margin-left:2%;
+   }
+</style>
+

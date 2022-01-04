@@ -1,0 +1,102 @@
+﻿@model Project_SET.Models.WaterAndSewerageComplaint
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<center><h2><b><i>Welcome to Water and Sewerage Complaint Department</i></b></h2></center>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    <center><h3><i>Note: If any complaint found fake or un-necessary a strick action will taken by the authority.</i></h3><br /></center>
+    <center><h4><i> Note: Please select your department first </i></h4><br /></center>
+        <div class="form-horizontal">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.CNIC_NO, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="far fa-id-card"></i>
+                        </span>
+                        @Html.EditorFor(model => model.CNIC_NO, new { htmlAttributes = new { @class = "form-control", @required="required", @placeholder="Enter CNIC number" } })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.CNIC_NO, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NAME, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        @Html.EditorFor(model => model.NAME, new { htmlAttributes = new { @class = "form-control", @required = "required", @placeholder = "Enter your full name" } })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.NAME, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.CNIC_ADDRESS, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="far fa-address-card"></i>
+                        </span>
+                        @Html.EditorFor(model => model.CNIC_ADDRESS, new { htmlAttributes = new { @class = "form-control", @required = "required", @placeholder = "Enter your CNIC address" } })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.CNIC_ADDRESS, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.AREA, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        @Html.EditorFor(model => model.AREA, new { htmlAttributes = new { @class = "form-control", @required = "required", @placeholder = "Enter your area" } })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.AREA, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.COMPLAINT, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="far fa-keyboard"></i>
+                        </span>
+                        @Html.EditorFor(model => model.COMPLAINT, new { htmlAttributes = new { @class = "form-control", @required = "required", @placeholder = "Write your complaint" } })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.COMPLAINT, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.S_NO, "S_NO", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("S_NO", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.S_NO, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Sumit" class="btn btn-primary" />
+                    <button type="reset" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
+                </div>
+            </div>
+        </div>
+}
+
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
